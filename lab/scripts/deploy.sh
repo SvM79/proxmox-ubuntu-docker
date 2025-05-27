@@ -9,6 +9,9 @@ cd ~/projects/proxmox-ubuntu-docker
 echo "🔄 Hämtar senaste ändringar från GitHub..."
 git pull
 
+echo "🔐 Säkerställer att verktygsskript är körbara..."
+chmod +x lab/scripts/*.sh
+
 echo "📦 Går till docker-katalog..."
 cd lab/docker
 
